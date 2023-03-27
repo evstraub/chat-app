@@ -3,7 +3,17 @@
   text-align: center;
   padding: 5px;
 }
-.wrapper > button {
+.signIn > button {
+  background-color: green;
+  float: right;
+  height: 20px;
+  width: 80px;
+  margin: 10px;
+  border: none;
+  border-radius: 5px;
+  color: black;
+}
+.logOut > button {
   background-color: green;
   float: right;
   height: 20px;

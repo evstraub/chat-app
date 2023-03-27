@@ -2,6 +2,7 @@ import './component.css'
 import { auth } from '../firebase';
 import { useAuthState } from 'react-firebase-hooks/auth';
 import SignIn from './SignIn';
+import LogOut from './LogOut';
 
 
 const Navbar = () => {
@@ -11,7 +12,8 @@ const Navbar = () => {
     <>
       <div className="nav">
         <h1 className="meMessage">meMessage</h1>
-        <SignIn />
+        {user ? <LogOut/> : <SignIn/>}
+        
       </div>
     </>
   );

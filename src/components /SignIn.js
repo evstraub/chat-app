@@ -12,7 +12,7 @@ const googleSignIn = () => {
 
 const SignIn = () => {
   return (
-    <div className="wrapper">
+    <div className="signIn">
        <button onClick={googleSignIn}>Sign In</button> 
     </div>
   )
