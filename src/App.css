@@ -1,0 +1,15 @@
+.app-container {
+  max-width: 728px;
+  text-align: center;
+  margin: auto;
+}
+
+.section-container {
+  display: flex;
+  flex-direction: column;
+  height: 90vh;
+  background-color: rgb(240, 240, 240);
+  margin-top: 10px;
+  box-shadow: 8px 11px 78px -20px rgba(0, 0, 0, 1);
+  position: relative;
+}

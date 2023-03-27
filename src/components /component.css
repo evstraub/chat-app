@@ -1,7 +1,7 @@
 .nav {
   background-color: darkgrey;
   text-align: center;
-  padding: 5px;
+  margin-bottom: 5px;
 }
 .signIn > button {
   background-color: green;
@@ -22,4 +22,38 @@
   border: none;
   border-radius: 5px;
   color: black;
+}
+.message {
+  display: flex;
+  align-items: center;
+  box-shadow: 8px 11px 78px -20px rgba(0, 0, 0, 1);
+  margin: 1rem;
+  padding-top: 2px;
+  padding-bottom: 2px;
+  padding-left: 3px;
+  padding-right: 3px;
+}
+.chat {
+  display: flex;
+  flex-direction: column;
+  position: 10px relative;
+}
+.name {
+  font-size: small;
+  color: darkgray;
+  position: fixed;
+  margin-top: -4rem;
+}
+.sent {
+  background: red;
+  color: aliceblue;
+  flex-direction: row-reverse;
+  float: right;
+  border-bottom-left-radius: 9999px;
+}
+.received {
+  background: green;
+  color: aliceblue;
+  float: left;
+  border-bottom-right-radius: 9999px;
 }
