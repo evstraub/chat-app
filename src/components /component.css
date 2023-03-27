@@ -1,0 +1,15 @@
+.nav {
+  background-color: darkgrey;
+  text-align: center;
+  padding: 5px;
+}
+.wrapper > button {
+  background-color: green;
+  float: right;
+  height: 20px;
+  width: 80px;
+  margin: 10px;
+  border: none;
+  border-radius: 5px;
+  color: black;
+}
