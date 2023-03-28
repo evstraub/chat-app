@@ -1,4 +1,4 @@
-.nav {
+/* .nav {
   background-color: darkgrey;
   text-align: center;
   margin-bottom: 5px;
@@ -23,16 +23,7 @@
   border-radius: 5px;
   color: black;
 }
-.message {
-  display: flex;
-  align-items: center;
-  box-shadow: 8px 11px 78px -20px rgba(0, 0, 0, 1);
-  margin: 1rem;
-  padding-top: 2px;
-  padding-bottom: 2px;
-  padding-left: 3px;
-  padding-right: 3px;
-}
+
 .chat {
   display: flex;
   flex-direction: column;
@@ -41,19 +32,32 @@
 .name {
   font-size: small;
   color: darkgray;
-  position: fixed;
+  position: absolute;
   margin-top: -4rem;
 }
-.sent {
-  background: red;
-  color: aliceblue;
-  flex-direction: row-reverse;
-  float: right;
-  border-bottom-left-radius: 9999px;
+
+.message-form {
+  height: 3.5rem;
+  width: 100%;
+  max-width: 728px;
+  display: flex;
+  font-size: 1.25rem;
+  position: absolute;
+  bottom: 0px;
 }
-.received {
-  background: green;
-  color: aliceblue;
-  float: left;
-  border-bottom-right-radius: 9999px;
+.message-input {
+  width: 100%;
+  font-size: 1.25rem;
+  padding: 3px;
+  background-color: darkgrey;
+  color: white;
+  outline: none;
+  border: none;
 }
+
+.send-btn {
+  width: 20%;
+  background-color: green;
+  outline: none;
+  border: none;
+} */
