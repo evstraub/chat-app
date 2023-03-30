@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useRef } from "react";
-import Message from "./Message";
-import SendMessage from "./SendMessage";
+import Message  from './Message.js';
+import SendMessage from "./SendMessage.js";
 import { db } from "../firebase";
 import { query, collection, orderBy, onSnapshot } from "firebase/firestore";
 

@@ -1,23 +1,20 @@
 import React from "react";
 import Navbar from "./components /Navbar";
-import Chat from  "./components/Chat.js"
+import Chat from  "./components /Chat.js"
 import { auth } from "./firebase";
 import { useAuthState } from "react-firebase-hooks/auth";
+import DarkMode from "./components /DarkMode";
+import './App.css'
 
 
-const style = {
-  appContainer: `max-w-[728px] mx-auto text-center`,
-  sectionContainer: `flex flex-col h-[90vh] bg-gray-100 mt-10 shadow-xl border relative`,
-};
 
 function App() {
   const [user] = useAuthState(auth);
-  //  console.log(user)
   return (
-    <div className={style.appContainer}>
-      <section className="{style.sectionContainer}">
-        
+    <div className= "max-w-[728px] mx-auto text-center">
+      <section className="flex flex-col h-[90vh] bg-gray-100 mt-10 shadow-xl border relative ">
         <Navbar />
+        <DarkMode />
         {user ? <Chat /> : null}
       </section>
     </div>
